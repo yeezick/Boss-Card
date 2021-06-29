@@ -1,19 +1,33 @@
-# Project Overview
+# Boss Card 
 
-## Project Name
+##  Description
+It's not every day that you run into British billionaire Sir Richard Branson, but when you do, you probably don't want to greet him with a portfolio consisting of a cover letter, resume, certifications, etc. 
+Sometimes you want a dash of professional swagger to entice your new connection instead! 
+<br>
+Striving to get your name within reach, our virtual business card will equip your connections with a first impression of your design. 
 
-The name of your project.
-
-## Project Description
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+### Home + Product Info
+![Home](/images/homePage.png)
+
+
+### Product List
+![Listed cards](/images/productList.png)
+
+### Create
+![Form to post new cards](/images/form.png)
+
+### Edit
+![Autofilled form to edit card](/images/edit.png)
+
+### Product Item
+![Single card page](/images/productCard.png)
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![Tree-like layout of component hierarchy](/images/component-hierarchy.png)
+
 
 ## API and Data Sample
 
@@ -53,56 +67,67 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
     "offset": "recA34tOaoE1IVeC1"
 }
 ```
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+- Display at least 3 cards of "examples"hosted by AirTable
+- Allow user to submit their own cards, add to display
+- Allow user to edit their cards in case of typos
+- Include route to display a single card
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
+- Display date on card
+- Allow user to edit card styling
 - Use local storage to save user favorites
+- Allow user to choose favorites and use their templates
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|June 28| Prompt / Wireframes / Priority Matrix / Timeframes | Complete 
+|June 29| Project Approval | Incomplete
+|June 29| Core Application Structure (Pseudocode, skeleton) | Incomplete
+|June 30 - July 1| CRUD functionality (Initial Clickable Model) | Incomplete
+|July 1 - 2| Critical Design  | Incomplete
+|July 2| MVP | Incomplete
+|July 7| Presentations | Incomplete
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Task <small>(in sequence)</small> | Description | Estimated Time | Time Invested
+| --- | :---: |  :---: | :---:
+| WireFrame | Visualization of project | 1.5hrs| 2hrs
+| README.md | Verbalization of project | 1.5hrs| 2hrs
+| App Skeleton | Via zombie components to test routing  | 3hrs| null
+| <small>GET</small> API | Render data from AirTable on main page | 1.5hrs| null
+| Form Component | Enable users to submit their information for their own card  | 3hrs| null
+| <small>POST</small> API | Setup form component that posts input to AirTable | 1.5hrs| null
+| <small>PUT</small> API | Allow users to edit their input | 1.5hrs| null
+| <small>DELETE</small> API | Allow users to remove their input | 1.5hrs| null
+| Polish Core Design | A good time to take a step back and optimize application visually  | 3hrs| null
+| Polish Card Design | Structure card design to resemble wireframe | 3hrs| null
+| Core Design II| Core Design Harder  | 3hrs| null
+| Card Design | Card Design Strikes Back | 3hrs| null
+| <strong>Total</strong> | 2 out 12  complete | 27hrs| 4hrs 
 
 ## SWOT Analysis
 
 ### Strengths:
+- good understanding of react functional components
+- decent grip on object traversal
+- confident in ability
 
 ### Weaknesses:
+- awful color palate
+- css in terms of data display
+- class components
 
 ### Opportunities:
+- use class components at least once
+- enabling user to affect card design will be serious practice
+- would love to give 3d/shadow effect to containers
+- make application aesthetic enough to give a real business impression
 
 ### Threats:
+- CSS
