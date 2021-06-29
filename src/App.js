@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Form from "./components/Form";
 import ProductList from "./components/ProductList"
+import SingleCard from "./components/SingleCard"
 import "./App.css";
 
 function App() {
@@ -29,8 +30,11 @@ function App() {
       <Route exact path="/">
         <Home cardList={cardList}/>
       </Route>
-      <Route path="/products">
+      <Route exact path="/products">
         <ProductList cardList={cardList}/>
+      </Route>
+      <Route path="/products/:id">
+        <SingleCard cardList={cardList}/>
       </Route>
       <Route path="/create">
         <Form setToggleRender={setToggleRender} />
@@ -38,6 +42,7 @@ function App() {
       <Route path="/edit/:id">
         <Form cardList={cardList} setToggleRender={setToggleRender}/>
       </Route>
+      
     </div>
   );
 }
