@@ -22,7 +22,7 @@ function App() {
       // console.log(resp.data.records)
     }
     fetchCards();
-  },[])
+  },[toggleRender])
 
   return (
     <div className="App">

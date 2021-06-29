@@ -3,7 +3,9 @@ import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
 
-function Form({ setToggleRender }) {
+function Form(props) {
+  const { setToggleRender, cardList } = props;
+  console.log(props)
   // states
   const [name, setName] = useState("");
   const [brand, setBrand] = useState("");
@@ -16,6 +18,26 @@ function Form({ setToggleRender }) {
   const params = useParams();
   const history = useHistory();
 
+  useEffect(() => {
+    // if theres an id in the url and the data array is bigger than 0
+    if (params.id && cardList.length > 0) {
+      // find the card with the corresponding id in params
+      const cardToFind = cardList.find((card) => card.id === params.id);
+      // destructure fields of card to find
+      const { fields } = cardToFind;
+      // if the card exists, populate the states
+      if (cardToFind) {
+        setName(fields.name);
+        setBrand(fields.brand);
+        setDescription(fields.description);
+        setHighlights(fields.highlights);
+        setEmail(fields.email);
+        setLinkedin(fields.linkedin);
+        setAlternativeLink(fields.alternativeLink);
+      }
+    }
+  }, [params.id, props.cardList]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newCard = {
@@ -26,9 +48,14 @@ function Form({ setToggleRender }) {
       email,
       alternativeLink,
     };
-
-    // make an axios post request to the baseurl, attached with data to add & auth config
-    await axios.post(baseURL, { fields: newCard }, config);
+    // if url contains parameters, the form will render with pre-filled data and submit to api using PUT instead
+    if (params.id) {
+      const specificURL = `${baseURL}/${params.id}`;
+      await axios.put(specificURL, { fields: newCard }, config);
+    } else {
+      // make an axios post request to the baseurl, attached with data to add & auth config
+      await axios.post(baseURL, { fields: newCard }, config);
+    }
 
     // triggers redirect after 1 second
     setToggleRender((curr) => !curr);
@@ -85,7 +112,7 @@ function Form({ setToggleRender }) {
         type="email"
         id="email"
         placeholder="rainingcats101@catmail.com"
-        value={email} 
+        value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
@@ -100,8 +127,13 @@ function Form({ setToggleRender }) {
       />
 
       <label htmlFor="alternativeLink">Alternative Link:</label>
-      <input type="text" id="alternativeLink" placeholder="https://github.com/..."
-      value={alternativeLink} onChange={(e) => setAlternativeLink(e.target.value)}/>
+      <input
+        type="text"
+        id="alternativeLink"
+        placeholder="https://github.com/..."
+        value={alternativeLink}
+        onChange={(e) => setAlternativeLink(e.target.value)}
+      />
       <button>Create Your Card</button>
     </form>
   );

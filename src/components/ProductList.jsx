@@ -6,10 +6,13 @@ function ProductList({ cardList }) {
   return (
     <section>
       {cardList.map((card) => (
-        <div>
+        <div key={card.id+0}>
           <Card key={card.id} card={card} />
-          <Link key={card.createdTime} to={`/products/${card.id}`}>
+          <Link to={`/products/${card.id}`}>
             <button>View</button>
+          </Link>
+          <Link to={`/edit/${card.id}`}>
+            <button>Edits</button>
           </Link>
         </div>
       ))}

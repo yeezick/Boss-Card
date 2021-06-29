@@ -1,18 +1,20 @@
 import {useParams} from "react-router-dom"
+import {Link} from "react-router-dom";
 // import {baseURL, config} from "../services"
 
 function SingleCard(props) {
   const params = useParams();
+  console.log(props)
   
   const cardToFind = props.cardList.find((card) => card.id === params.id)
-  // const {name, brand, description, highlights, email, linkedin, alternativeLink} = cardToFind.fields;
-  console.log(cardToFind.fields.name)
-  const name = cardToFind.fields.name
+  const {name, brand, description, highlights, email, linkedin, alternativeLink} = cardToFind.fields;
+  console.log(cardToFind)
+  // const name = cardToFind.fields.name
 
   return (
     <section className="card">
-      <h2>{name}</h2>
-      {/* <div className="first-row">
+      <h2>why am i broken</h2>
+      <div className="first-row">
         <h2>{name}</h2>
         <p>{brand}</p>
       </div>
@@ -35,7 +37,10 @@ function SingleCard(props) {
         <a href={alternativeLink} target="_blank" rel="noreferrer">
           <img src="" alt="Alternative link" />
         </a>
-      </div> */}
+      </div>
+      <Link to={`/edit/${params.id}`}>
+        <button>Edit</button>
+      </Link>
     </section>
   );
 }
