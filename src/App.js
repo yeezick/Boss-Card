@@ -6,6 +6,7 @@ import { baseURL, config } from "./services";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Form from "./components/Form";
+import ProductList from "./components/ProductList"
 import "./App.css";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       const resp = await axios.get(baseURL, config);
       setCardList(resp.data.records)
       // remove console log before publishing
-      console.log(resp.data.records)
+      // console.log(resp.data.records)
     }
     fetchCards();
   },[])
@@ -28,8 +29,8 @@ function App() {
       <Route exact path="/">
         <Home cardList={cardList}/>
       </Route>
-      <Route path="products">
-        {/* map through card list and display card for each one */}
+      <Route path="/products">
+        <ProductList cardList={cardList}/>
       </Route>
       <Route path="/create">
         <Form setToggleRender={setToggleRender} />
