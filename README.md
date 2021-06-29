@@ -11,6 +11,9 @@ Striving to get your name within reach, our virtual business card will equip you
 
 ### Home + Product Info
 ![Home](/images/homePage.png)
+ 
+ ###### Home (Mobile)
+![mobile](/images/mobileHome.png)
 
 
 ### Product List
@@ -24,6 +27,7 @@ Striving to get your name within reach, our virtual business card will equip you
 
 ### Product Item
 ![Single card page](/images/productCard.png)
+<small>No other components need a mobile version as they will already be responsive.</small>
 
 ## Component Hierarchy
 ![Tree-like layout of component hierarchy](/images/component-hierarchy.png)
@@ -31,41 +35,17 @@ Striving to get your name within reach, our virtual business card will equip you
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
-{
-    "records": [
-        {
-            "id": "recONRzIUTuZ5lXaF",
-            "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        }
-    ],
-    "offset": "recA34tOaoE1IVeC1"
-}
+    {
+      "id": "recOLaMaqz6dnvZX7",
+      "fields": {
+        "Name": "Rodrigo Rubberwings",
+        "Brand": "Everyone underestimates the power of rubber ducking, little do they know I am responsible for most of their breakthroughs.",
+        "Description": "As a rubber duck, I am only ever focused on one thing: getting you unstuck. It's not easy being cute and sociable, but I make it oook easy even in a developer's most challenging situations. It's kind of like analyzing a way of getting over a mountain. Intimidating at first, but if you make a plan first, you might notice there's a cave that takes us right through.",
+        "Highlights": "Social, Enthusiastic, Problem Solver, Inanimate"
+      },
+      "createdTime": "2021-06-28T21:27:21.000Z"
+    }
 ```
 #### MVP 
 - Display at least 3 cards of "examples"hosted by AirTable
