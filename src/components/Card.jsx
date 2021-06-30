@@ -24,7 +24,7 @@ function Card({ card }) {
         <h3>Skills</h3>
         <p>{highlights}</p>
       </div>
-      <div>
+      <div className="fourth-row">
         <h2>Get In Touch!</h2>
         <a href={email} target="_blank" rel="noreferrer">
           <img src="" alt="email" />

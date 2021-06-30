@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom"
 import {Link} from "react-router-dom";
+import Loading from "./Loading";
 // import {baseURL, config} from "../services"
 
 function SingleCard(props) {
@@ -7,6 +8,9 @@ function SingleCard(props) {
   console.log(props)
   
   const cardToFind = props.cardList.find((card) => card.id === params.id)
+  if (!cardToFind) {
+    return (<Loading/>);
+  }
   const {name, brand, description, highlights, email, linkedin, alternativeLink} = cardToFind.fields;
   console.log(cardToFind)
 
@@ -24,7 +28,7 @@ function SingleCard(props) {
         <h3>Skills</h3>
         <p>{highlights}</p>
       </div>
-      <div>
+      <div className="fourth-row">
         <h2>Get In Touch!</h2>
         <a href={email} target="_blank" rel="noreferrer">
           <img src="" alt="email" />

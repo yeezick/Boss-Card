@@ -34,7 +34,7 @@ function App() {
         <ProductList cardList={cardList}/>
       </Route>
       <Route path="/products/:id">
-        <SingleCard cardList={cardList}/>
+        <SingleCard cardList={cardList}/> 
       </Route>
       <Route path="/create">
         <Form setToggleRender={setToggleRender} />

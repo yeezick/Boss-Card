@@ -1,9 +1,15 @@
+
 * {
   box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6 {
   padding: 0;
   margin: 0;
+}
+
+/* app styling */
+.App {
+  background-color:#f3ae3b ;
 }
 
 /* nav */
@@ -14,14 +20,20 @@ h1,h2,h3,h4,h5,h6 {
   align-items:center;
 
   padding: 0 2rem;
-  background-color: lavender;
+  background-color: #1c5162;
+  color: white;
 }
 .nav-link {
 padding: 0 1rem;
+color: #e1eaca;
+text-decoration: none;
 }
 .nav-title {
   padding: 0;
   margin: 0.5rem;
+color: #e1eaca;
+font-size: 1.5rem;
+text-decoration: none;
 }
 /*
 *HOME COMPONENT
@@ -29,19 +41,23 @@ padding: 0 1rem;
 
 /* intro */
 .intro {
+  background: url("./images/conference-photo.jpeg") no-repeat center/cover;
   background-color: slategray;
   height: 75vh;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
 .intro-text {
   max-width: 30vw;
-  margin: 0 auto;
-  position: absolute;
+  padding: 1rem;
 
-
-
-  background-color: white;
-  text-align:center;
+  background-color: lightblue;
+color: black;
+border-radius: 16px;
+text-align: center;
 }
 /* market */
 .market-section {
@@ -53,4 +69,38 @@ padding: 0 1rem;
   text-align: center;
   background-color: lightsteelblue;
   max-width: 28vw;
+}
+
+/* cards */
+.card {
+  max-width: 85vw;
+  margin: 1rem auto;
+  grid-template-areas: 
+  "first",
+  "second",
+  "third",
+  "fourth";
+  
+  background-color: #e1eaca;
+  border-radius: 16px;
+  border: 2px solid #1c5162;
+}
+.product-btn {
+  text-align: center;
+}
+.first-row {
+  padding: 1rem 2rem;;
+  text-align: center;
+}
+.second-row {
+  padding: 0 2rem;
+}
+
+.third-row {
+  text-align: right;
+  padding-right: 2rem;
+}
+.fourth-row{
+  text-align: center;
+  padding-bottom: 2rem;
 }
