@@ -13,32 +13,32 @@ Striving to get your name within reach, our virtual business card will equip you
 
 ### Home + Product Info
 
-![Home](/images/homePage.png)
+![Home](src/images/homePage.png)
 
 ###### Home (Mobile)
 
-![mobile](/images/mobileHome.png)
+![mobile](src/images/mobileHome.png)
 
 ### Product List
 
-![Listed cards](/images/productList.png)
+![Listed cards](src/images/productList.png)
 
 ### Create
 
-![Form to post new cards](/images/form.png)
+![Form to post new cards](src/images/form.png)
 
 ### Edit
 
-![Autofilled form to edit card](/images/edit.png)
+![Autofilled form to edit card](src/images/edit.png)
 
 ### Product Item
 
-![Single card page](/images/productCard.png)
+![Single card page](src/images/productCard.png)
 <small>No other components need a mobile version as they will already be responsive.</small>
 
 ## Component Hierarchy
 
-![Tree-like layout of component hierarchy](/images/component-hierarchy.png)
+![Tree-like layout of component hierarchy](src/images/component-hierarchy.png)
 
 ## API and Data Sample
 

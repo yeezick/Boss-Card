@@ -1,15 +1,19 @@
-
 * {
   box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
 }
 
 /* app styling */
 .App {
-  background-color:#f3ae3b ;
+  background-color: #f3ae3b;
 }
 
 /* nav */
@@ -17,23 +21,23 @@ h1,h2,h3,h4,h5,h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 
   padding: 0 2rem;
   background-color: #1c5162;
   color: white;
 }
 .nav-link {
-padding: 0 1rem;
-color: #e1eaca;
-text-decoration: none;
+  padding: 0 1rem;
+  color: #e1eaca;
+  text-decoration: none;
 }
 .nav-title {
   padding: 0;
   margin: 0.5rem;
-color: #e1eaca;
-font-size: 1.5rem;
-text-decoration: none;
+  color: #e1eaca;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 /*
 *HOME COMPONENT
@@ -48,27 +52,30 @@ text-decoration: none;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 .intro-text {
   max-width: 30vw;
   padding: 1rem;
 
   background-color: lightblue;
-color: black;
-border-radius: 16px;
-text-align: center;
+  color: black;
+  border-radius: 16px;
+  text-align: center;
 }
 /* market */
 .market-section {
   background-color: lightblue;
   display: flex;
-  justify-content: space-evenly
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-evenly;
+  height: 75vh;
 }
 .market-card {
   text-align: center;
   background-color: lightsteelblue;
   max-width: 28vw;
+  max-height: max-content;
 }
 
 /* cards */
@@ -77,10 +84,10 @@ text-align: center;
   padding: 2rem;
   margin: 1rem auto;
   display: grid;
-  grid-template-areas: 
-  "pic first first"
-  "connect second second"
-  "connect third third";
+  grid-template-areas:
+    "pic first first"
+    "connect second second"
+    "connect third third";
 
   background-color: #e1eaca;
   border-radius: 16px;
@@ -93,7 +100,7 @@ text-align: center;
 .first-row {
   padding: 1rem 0;
   text-align: center;
-  display:flex;
+  display: flex;
 }
 .first-row-image {
   grid-area: pic;
@@ -104,8 +111,8 @@ text-align: center;
   margin: 1rem;
 }
 .first-row-text {
-  text-align:center;
-  grid-area:first;
+  text-align: center;
+  grid-area: first;
   padding: 1rem 0 0 1rem;
 }
 .second-row {
@@ -116,7 +123,7 @@ text-align: center;
   text-align: right;
   grid-area: third;
 }
-.connect-column{
+.connect-column {
   display: grid;
   grid-template-columns: 1rem 1fr;
   /* text-align: center; */
@@ -134,7 +141,7 @@ text-align: center;
   /* grid-area: connect; */
   display: flex;
   flex-flow: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   /* padding-top: 2rem; */
 }
