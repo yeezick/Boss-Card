@@ -1,9 +1,12 @@
-import ProductList from "./ProductList"
+import Intro from "./Intro";
+import Market from "./Market";
+import ProductList from "./ProductList";
+
 function Home ({cardList}) {
   return (
     <main>
-      <div> intro banner </div>
-      <div>  product information</div>
+      <Intro />
+      <Market/>
       <ProductList cardList={cardList}/>
     </main>
   )
