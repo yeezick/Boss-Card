@@ -160,6 +160,8 @@ p{
   color: #333333;
 }
 .product-btn {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
@@ -213,6 +215,9 @@ p{
 }
 .icon {
   padding: 1rem auto;
+}
+.button-group {
+  text-align:center;
 }
 
 @media screen and (max-width: 600px) {

@@ -48,16 +48,14 @@ function SoloCard({ soloCard }) {
           </div>
         </div>
       </Card>
-      <ButtonGroup aria-label="view and edit buttons">
       <div className="product-btn">
         <Link to={`/products/${soloCard.id}`}>
           <Button variant="secondary">View</Button>
         </Link>
         <Link to={`/edit/${soloCard.id}`}>
-          <Button variant="secondary">Edits</Button>
+          <Button variant="secondary">Edit</Button>
         </Link>
       </div>
-      </ButtonGroup>
     </Container>
   );
 }
