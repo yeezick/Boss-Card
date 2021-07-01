@@ -53,8 +53,10 @@ p{
 
 /* intro */
 .intro {
-  background: url("./images/conference-photo.jpeg") no-repeat center/cover;
-  background-color: slategray;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/conference-photo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 75vh;
   display: flex;
   flex-direction: row;
@@ -74,7 +76,7 @@ p{
   font-family: "Playfair Display", serif !important;
 }
 .intro-text > h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 /* market */
 .market-section {
@@ -141,7 +143,6 @@ p{
 }
 .first-row-image {
   grid-area: pic;
-
   height: 125px;
   width: 125px;
   border-radius: 50%;
@@ -186,3 +187,39 @@ p{
   padding: 1rem auto;
 }
 
+@media screen and (max-width: 1000px) {
+  .card {
+    grid-template-areas: 
+    "pic"
+    "first"
+    "second"
+    "third"
+    "connect";
+    text-align:center;
+  }
+  .first-row-image {
+    margin: 1rem auto;
+  }
+  .connect-column{
+    grid-template-columns:none;
+    grid-template-areas: 
+    "header"
+    "icons";
+    justify-content: space-evenly;
+  }
+
+  .connect-text {
+    max-width: none;
+    writing-mode:initial;
+    text-orientation:initial;
+    margin: 2rem auto;
+    padding: 0;
+    grid-area: header;
+  }
+  .icon-row {
+    width:70vw;
+    grid-area: icons;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+}

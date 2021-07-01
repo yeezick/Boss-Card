@@ -6,9 +6,16 @@ function Navbar() {
         Boss Card
       </Link>
       <div className="linkbar">
-        <Link className="nav-link" to="/">Home</Link>
-        <Link className="nav-link" to="/create">Create</Link>
-        <Link className="nav-link" to="/products">Products</Link>
+        <Link to="/bootstrap">BOOTSTRAP</Link>
+        <Link className="nav-link" to="/">
+          Home
+        </Link>
+        <Link className="nav-link" to="/create">
+          Create
+        </Link>
+        <Link className="nav-link" to="/products">
+          Products
+        </Link>
       </div>
     </nav>
   );

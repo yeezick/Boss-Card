@@ -5,8 +5,9 @@ import { baseURL, config } from "../services";
 
 function Form(props) {
   const { setToggleRender, cardList } = props;
-  console.log(props)
+  console.log(props);
   // states
+  const [profilePic, setProfilePic] = useState("");
   const [name, setName] = useState("");
   const [brand, setBrand] = useState("");
   const [description, setDescription] = useState("");
@@ -27,6 +28,7 @@ function Form(props) {
       const { fields } = cardToFind;
       // if the card exists, populate the states
       if (cardToFind) {
+        setProfilePic(fields.profilePic);
         setName(fields.name);
         setBrand(fields.brand);
         setDescription(fields.description);
@@ -41,6 +43,7 @@ function Form(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newCard = {
+      profilePic,
       name,
       brand,
       description,
@@ -66,42 +69,50 @@ function Form(props) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label htmlFor="profilePic">Link to your profile picture:</label>
+      <input
+        type="text"
+        id="profilePic"
+        placeholder="URL"
+        value={profilePic}
+        onChange={(e) => setProfilePic(e.target.value)}
+      />
       <label htmlFor="name">My name is:</label>
       <input
         required
         type="text"
         id="name"
-        placeholder="First and last name."
+        placeholder="First and last name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
-      <label htmlFor="brand">Personal Brand:</label>
+      <label htmlFor="brand">What would you want someone to know on first impressions?</label>
       <input
         required
         type="text"
         id="brand"
-        placeholder="In one or two sentences, what would you want someone to know on first impressions?"
+        placeholder="1-2 sentences"
         value={brand}
         onChange={(e) => {
           setBrand(e.target.value);
         }}
       />
 
-      <label htmlFor="description">About Me:</label>
+      <label htmlFor="description">A short paragraph going in-depth about you and who you are!</label>
       <textarea
         required
         id="description"
-        placeholder="A short paragraph going in-depth about you and who you are!"
+        placeholder="2+ sentences"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       ></textarea>
 
-      <label htmlFor="highlights">Highlights:</label>
+      <label htmlFor="highlights">What are some things you're proud of or consider highlights about you?</label>
       <textarea
         required
         id="highlights"
-        placeholder="A short paragraph highlighting your talents or accomplishments in a professional tone."
+        placeholder="Sentence / List"
         value={highlights}
         onChange={(e) => setHighlights(e.target.value)}
       ></textarea>
@@ -121,7 +132,7 @@ function Form(props) {
         required
         type="text"
         id="linkedin"
-        placeholder="https://www.linkedin.com/in/..."
+        placeholder="URL"
         value={linkedin}
         onChange={(e) => setLinkedin(e.target.value)}
       />
@@ -130,7 +141,7 @@ function Form(props) {
       <input
         type="text"
         id="alternativeLink"
-        placeholder="https://github.com/..."
+        placeholder="URL"
         value={alternativeLink}
         onChange={(e) => setAlternativeLink(e.target.value)}
       />
