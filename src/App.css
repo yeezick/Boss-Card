@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Voltaire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,10 +11,11 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: 'Voltaire', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 p{
-  font-family: 'Open Sans', serif;
+  font-family: 'Roboto', serif;
 }
 
 /* app styling */
@@ -37,7 +38,8 @@ p{
   padding: 0 1rem;
   color: #ecd9af;
   text-decoration: none;
-  font-family: 'Voltaire', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 .nav-title {
   padding: 0;
@@ -45,7 +47,8 @@ p{
   color: #ecd9af;
   font-size: 1.5rem;
   text-decoration: none;
-  font-family: 'Voltaire', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 /*
 *HOME COMPONENT
@@ -80,25 +83,29 @@ p{
 }
 /* market */
 .market-section {
-  background-color: #693a3d;
+  background-color: #ecd9af;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 16px;
   /* display: flex;
   flex-direction: row; */
   /* align-items:center;
   justify-content: space-evenly; */
-  height: 75vh;
+  /* height: 75vh; */
   
 }
-.market-card-container {
+/* .market-card-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */
 .market-header {
   text-align:right;
   padding:2rem 5rem;
-  color: #ecd9af;
+  color: white;
 }
-.market-card {
+/* .market-card {
   width: 28vw;
   height: 35vh;
   word-wrap: break-word;
@@ -108,6 +115,13 @@ p{
   border-radius: 16px;
   border: 1px solid black;
   background-color: #f2f3ea;
+} */
+.market-tab {
+  width: 100%;
+}
+.market-text {
+  display: inline-block;
+  padding-left: 2rem;
 }
 
 /* product list */
@@ -116,9 +130,22 @@ p{
   color: #ecd9af;
 }
 
+
+/* form */
+.form-container {
+  border-radius: 16px;
+  background-color: #FFF8E7;
+  padding: 2rem;
+}
+.form-label {
+  font-weight: 600;
+  color: #693a3d;
+}
+
+
 /* cards */
-.card {
-  max-width: 85vw;
+.product-card {
+  max-width: 75vw;
   padding: 2rem;
   margin: 1rem auto;
   display: grid;
@@ -135,6 +162,7 @@ p{
 .product-btn {
   text-align: center;
   padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .first-row {
   padding: 1rem 0;
@@ -187,7 +215,7 @@ p{
   padding: 1rem auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .card {
     grid-template-areas: 
     "pic"
@@ -196,6 +224,7 @@ p{
     "third"
     "connect";
     text-align:center;
+    max-width: none;
   }
   .first-row-image {
     margin: 1rem auto;

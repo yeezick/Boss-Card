@@ -27,7 +27,7 @@ function SingleCard(props) {
 
   return (
     <div>
-      <section className="card">
+      <section className="product-card">
           <img className="first-row-image" src={profilePic} alt="client" />
           <div className="first-row-text">
             <h2>{name}</h2>

@@ -5,10 +5,10 @@ import { baseURL, config } from "./services";
 // components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Form from "./components/Form";
 import ProductList from "./components/ProductList"
 import SingleCard from "./components/SingleCard"
-import BootStrapForm from "./components/BootStrapForm";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -42,9 +42,6 @@ function App() {
       </Route>
       <Route path="/edit/:id">
         <Form cardList={cardList} setToggleRender={setToggleRender}/>
-      </Route>
-      <Route path="/bootstrap">
-        <BootStrapForm setToggleRender={setToggleRender}/>
       </Route>
       <Footer />
     </div>

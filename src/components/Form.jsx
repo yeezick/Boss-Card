@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import { Container, Card, Col, Row, Jumbotron, Form, Button } from "react-bootstrap";
 
-function Form(props) {
+function BootStrapForm(props) {
   const { setToggleRender, cardList } = props;
   console.log(props);
   // states
@@ -15,6 +16,8 @@ function Form(props) {
   const [email, setEmail] = useState("");
   const [linkedin, setLinkedin] = useState("");
   const [alternativeLink, setAlternativeLink] = useState("");
+  const [jumboHeader, setJumboHeader] = useState("All About You")
+  const [jumboText, setJumboText] = useState("This is where the magic happens and it starts with <bold>you</bold>. The information you input here will be used to create your card!<br/> <small>Please read the labels and placeholders carefully.")
   // react router dom methods
   const params = useParams();
   const history = useHistory();
@@ -36,6 +39,8 @@ function Form(props) {
         setEmail(fields.email);
         setLinkedin(fields.linkedin);
         setAlternativeLink(fields.alternativeLink);
+        setJumboHeader("Nobody's perfect");
+        setJumboText("Fix whatever you need to fix boss.")
       }
     }
   }, [params.id, props.cardList]);
@@ -66,88 +71,125 @@ function Form(props) {
       history.push("/");
     }, 1000);
   };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="profilePic">Link to your profile picture:</label>
-      <input
-        type="text"
-        id="profilePic"
-        placeholder="URL"
-        value={profilePic}
-        onChange={(e) => setProfilePic(e.target.value)}
-      />
-      <label htmlFor="name">My name is:</label>
-      <input
-        required
-        type="text"
-        id="name"
-        placeholder="First and last name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+    <Container>
+     <Card className="form-container">
 
-      <label htmlFor="brand">What would you want someone to know on first impressions?</label>
-      <input
-        required
-        type="text"
-        id="brand"
-        placeholder="1-2 sentences"
-        value={brand}
-        onChange={(e) => {
-          setBrand(e.target.value);
-        }}
-      />
+      <Jumbotron>
+        <h2>{jumboHeader}</h2>
+        <p>{jumboText}</p>
+      </Jumbotron>
+      <Form>
+        <Row>
+          <Col>
+            {/* profile */}
+            <Form.Group controlId="profilePic">
+              <Form.Label className="form-label">Link to your profile picture:</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="URL"
+                value={profilePic}
+                onChange={(e) => setProfilePic(e.target.value)}
+                />
+            </Form.Group>
+          </Col>
 
-      <label htmlFor="description">A short paragraph going in-depth about you and who you are!</label>
-      <textarea
-        required
-        id="description"
-        placeholder="2+ sentences"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      ></textarea>
+          <Col>
+            {/* name */}
+            <Form.Group controlId="name">
+              <Form.Label className="form-label">My name is:</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="First and Last Names"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                />
+            </Form.Group>
+          </Col>
+        </Row>
 
-      <label htmlFor="highlights">What are some things you're proud of or consider highlights about you?</label>
-      <textarea
-        required
-        id="highlights"
-        placeholder="Sentence / List"
-        value={highlights}
-        onChange={(e) => setHighlights(e.target.value)}
-      ></textarea>
+        {/* brand */}
+        <Form.Group controlId="brand">
+          <Form.Label className="form-label">
+            What's the first impression you want to make on others?
+          </Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="1-2 sentences"
+            value={brand}
+            onChange={(e) => setBrand(e.target.value)}
+            />
+        </Form.Group>
 
-      <label htmlFor="email">E-mail:</label>
-      <input
-        required
-        type="email"
-        id="email"
-        placeholder="rainingcats101@catmail.com"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        {/* description */}
+        <Form.Group controlId="description">
+          <Form.Label className="form-label">
+            A short paragraph going in-depth about you and who you are!
+          </Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="2+ sentences"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            />
+        </Form.Group>
 
-      <label htmlFor="linkedin">LinkedIn (URL):</label>
-      <input
-        required
-        type="text"
-        id="linkedin"
-        placeholder="URL"
-        value={linkedin}
-        onChange={(e) => setLinkedin(e.target.value)}
-      />
+        {/* highlights */}
+        <Form.Group controlId="highlights">
+          <Form.Label className="form-label">
+            What are some things you're proud of or consider highlights about
+            you?
+          </Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Sentence / List"
+            value={highlights}
+            onChange={(e) => setHighlights(e.target.value)}
+            />
+        </Form.Group>
 
-      <label htmlFor="alternativeLink">Alternative Link:</label>
-      <input
-        type="text"
-        id="alternativeLink"
-        placeholder="URL"
-        value={alternativeLink}
-        onChange={(e) => setAlternativeLink(e.target.value)}
-      />
-      <button>Create Your Card</button>
-    </form>
+        {/* email */}
+        <Form.Group controlId="email">
+          <Form.Label className="form-label">Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="rainingcats101@catmail.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            />
+        </Form.Group>
+
+        {/* linkedin */}
+        <Form.Group controlId="linkedin">
+          <Form.Label className="form-label">LinkedIn:</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="URL"
+            value={linkedin}
+            onChange={(e) => setLinkedin(e.target.value)}
+            />
+        </Form.Group>
+
+        {/* altlink */}
+        <Form.Group controlId="alternativeLink">
+          <Form.Label className="form-label">
+            An alternative link for anything like your portfolio, GitHub, or
+            favorite site!
+          </Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="URL"
+            value={alternativeLink}
+            onChange={(e) => setAlternativeLink(e.target.value)}
+            />
+        </Form.Group>
+        <Button className="form-button" variant="info" onClick={handleSubmit}>
+         
+          Create Boss Card
+        </Button>
+      </Form>
+      </Card>
+    </Container>
   );
 }
-
-export default Form;
+export default BootStrapForm;
