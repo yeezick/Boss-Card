@@ -116,6 +116,14 @@ p{
   color: #ecd9af;
 }
 
+/* form (bootstrap) */
+.bs-form-card {
+  padding: 2rem;
+  /* margin:3rem; */
+  background-color:#ecd9af;
+  border-radius: 16px;
+}
+
 /* cards */
 .card {
   max-width: 85vw;

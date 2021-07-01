@@ -9,6 +9,7 @@ import Form from "./components/Form";
 import ProductList from "./components/ProductList"
 import SingleCard from "./components/SingleCard"
 import BootStrapForm from "./components/BootStrapForm";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
       <Route path="/bootstrap">
         <BootStrapForm setToggleRender={setToggleRender}/>
       </Route>
-      
+      <Footer/>
     </div>
   );
 }
