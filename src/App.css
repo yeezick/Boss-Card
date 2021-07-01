@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Voltaire&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,11 +11,15 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+  font-family: 'Voltaire', sans-serif;
+}
+p{
+  font-family: 'Open Sans', serif;
 }
 
 /* app styling */
 .App {
-  background-color: #f3ae3b;
+  background-color: #693a3d;
 }
 
 /* nav */
@@ -24,20 +30,22 @@ h6 {
   align-items: center;
 
   padding: 0 2rem;
-  background-color: #1c5162;
+  background-color: #693a3d;
   color: white;
 }
 .nav-link {
   padding: 0 1rem;
-  color: #e1eaca;
+  color: #ecd9af;
   text-decoration: none;
+  font-family: 'Voltaire', sans-serif;
 }
 .nav-title {
   padding: 0;
   margin: 0.5rem;
-  color: #e1eaca;
+  color: #ecd9af;
   font-size: 1.5rem;
   text-decoration: none;
+  font-family: 'Voltaire', sans-serif;
 }
 /*
 *HOME COMPONENT
@@ -54,28 +62,56 @@ h6 {
   align-items: center;
 }
 .intro-text {
-  max-width: 30vw;
+  max-width: 75vw;
   padding: 1rem;
 
-  background-color: lightblue;
-  color: black;
+  /* background-color: lightblue; */
+  color: #ecd9af;
   border-radius: 16px;
   text-align: center;
 }
+.intro-text > h1, h4 {
+  font-family: "Playfair Display", serif !important;
+}
+.intro-text > h1 {
+  font-size: 5rem;
+}
 /* market */
 .market-section {
-  background-color: lightblue;
+  background-color: #693a3d;
+  /* display: flex;
+  flex-direction: row; */
+  /* align-items:center;
+  justify-content: space-evenly; */
+  height: 75vh;
+  
+}
+.market-card-container {
   display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content: space-evenly;
-  height: 75vh;
+  justify-content: space-around;
+}
+.market-header {
+  text-align:right;
+  padding:2rem 5rem;
+  color: #ecd9af;
 }
 .market-card {
+  width: 28vw;
+  height: 35vh;
+  word-wrap: break-word;
+  padding: 1rem;
+  
   text-align: center;
-  background-color: lightsteelblue;
-  max-width: 28vw;
-  max-height: max-content;
+  border-radius: 16px;
+  border: 1px solid black;
+  background-color: #f2f3ea;
+}
+
+/* product list */
+.product-list-header {
+  padding: 1rem 2rem;
+  color: #ecd9af;
 }
 
 /* cards */
@@ -89,9 +125,10 @@ h6 {
     "connect second second"
     "connect third third";
 
-  background-color: #e1eaca;
+  background-color:#ecd9af;
   border-radius: 16px;
   border: 2px solid #1c5162;
+  color: #333333;
 }
 .product-btn {
   text-align: center;
@@ -132,9 +169,9 @@ h6 {
 }
 .connect-text {
   max-width: 1rem;
-  word-wrap: break-word;
-  /* margin: 0; */
-  margin: auto 0;
+  writing-mode:vertical-rl;
+  text-orientation: upright;
+  margin-top: 3rem;
   padding: 0;
 }
 .icon-row {
@@ -148,3 +185,4 @@ h6 {
 .icon {
   padding: 1rem auto;
 }
+

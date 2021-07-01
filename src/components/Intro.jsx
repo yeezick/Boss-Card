@@ -2,8 +2,8 @@ function Intro() {
   return (
     <section className="intro">
       <div className="intro-text">
-        <h1>Boss Card</h1>
-        <h3>Don't be afraid to over do it,<br/> do it like a boss.</h3>
+        <h4>Some tasks require swagger, that's when you</h4>
+        <h1>Do it like a Boss</h1>
       </div>
     </section>
   );
