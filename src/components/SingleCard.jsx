@@ -60,7 +60,7 @@ function SingleCard(props) {
       </Card>
       <div className="product-btn">
         <Link to={`/edit/${cardToFind.id}`}>
-          <Button variant="secondary">Edit</Button>
+          <Button className="card-button" variant="secondary">Edit</Button>
         </Link>
       </div>
     </Container>

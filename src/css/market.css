@@ -25,10 +25,13 @@
   width: 80%;
   margin: auto;
   padding: 2rem 1.25rem;
+  font-family: "Montserrat", serif;
+  font-weight:500
 }
 .market-text {
   display: inline-block;
   padding-left: 2rem;
+  font-weight:900;
 }
 
 /* the below styling is not being used */

@@ -12,10 +12,10 @@
     "third third connect";
 
   background-color: #ecd9af;
-  color: #333333;
+  color: #252525;
 }
 .product-card-subheader {
-  background-color: #333333;
+  background-color: #252525;
   color: #ecd9af;
   width: fit-content;
   padding: 0.25rem;
@@ -23,7 +23,7 @@
   font-size: 1.2rem;
 }
 .product-card-header {
-  color: #333333;
+  color: #252525;
   padding-bottom: 0.5rem;
 }
 .product-btn {
@@ -115,6 +115,13 @@
 .icon {
   padding: 1rem auto;
 }
-.button-group {
-  text-align: center;
+.card-button {
+  background-color: black;
+  border:1px solid #ecd9af;
+  color: #ecd9af;
+}
+.card-button:hover {
+  color: black;
+  background-color: #ecd9af;
+  border: 1px solid black;
 }

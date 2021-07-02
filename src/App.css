@@ -15,11 +15,12 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Serif;
   font-weight: 600;
 }
 p {
-  font-family: "Roboto", serif;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
 }
 
 .App {
@@ -30,8 +31,9 @@ p {
   background-color: #252525 !important;
 }
 .nav-text{
+  font-family: Serif;
   color: #ecd9af !important;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 /* product list */

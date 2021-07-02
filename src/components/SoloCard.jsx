@@ -51,10 +51,10 @@ function SoloCard({ soloCard }) {
       </Card>
       <div className="product-btn">
         <Link to={`/products/${soloCard.id}`}>
-          <Button variant="secondary">View</Button>
+          <Button className="card-button" variant="secondary">View</Button>
         </Link>
         <Link to={`/edit/${soloCard.id}`}>
-          <Button variant="secondary">Edit</Button>
+          <Button className="card-button" variant="secondary">Edit</Button>
         </Link>
       </div>
     </Container>
