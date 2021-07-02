@@ -1,8 +1,10 @@
 /* cards */
 .product-card {
-  max-width: 75vw;
+  /* max-width: 75vw; */
   padding: 2rem;
-  margin: 1rem auto;
+  padding-top: 1rem;
+  /* margin: 1rem auto; */
+  margin-top: 5rem;
   display: grid;
   grid-template-areas:
     "pic first first"

@@ -1,7 +1,8 @@
 import { SiMinutemailer, SiLinkedin } from "react-icons/si";
 import { FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import {Button, ButtonGroup, Card, Container} from "react-bootstrap";
+import {Button, Card, Container} from "react-bootstrap";
+import "../css/card.css";
 
 function SoloCard({ soloCard }) {
   const {

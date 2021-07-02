@@ -2,6 +2,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 import { GiMagickTrick, GiPodiumWinner } from "react-icons/gi";
 import { Accordion, Container, Card, Button } from "react-bootstrap/";
 // import Container from "react-bootstrap/Container";
+import "../css/market.css";
 
 function Market() {
   return (

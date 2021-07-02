@@ -3,6 +3,8 @@ import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { Container, Card, Col, Row, Jumbotron, Form, Button } from "react-bootstrap";
+import "../css/form.css";
+
 
 function BootStrapForm(props) {
   const { setToggleRender, cardList } = props;
@@ -17,7 +19,8 @@ function BootStrapForm(props) {
   const [linkedin, setLinkedin] = useState("");
   const [alternativeLink, setAlternativeLink] = useState("");
   const [jumboHeader, setJumboHeader] = useState("All About You")
-  const [jumboText, setJumboText] = useState("This is where the magic happens and it starts with <bold>you</bold>. The information you input here will be used to create your card!<br/> <small>Please read the labels and placeholders carefully.")
+  const [jumboText, setJumboText] = useState("This is where the magic happens and it starts with You. The information you input here will be used to create your card! Please read the labels and placeholders carefully.")
+  
   // react router dom methods
   const params = useParams();
   const history = useHistory();

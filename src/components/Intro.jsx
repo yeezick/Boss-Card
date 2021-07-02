@@ -1,3 +1,5 @@
+import "../css/intro.css";
+
 function Intro() {
   return (
     <section className="intro">

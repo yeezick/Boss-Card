@@ -1,23 +1,5 @@
 /* market */
-.market-section {
-  background-color:#ecd9af ;
-}
-.market-container {
-  background-color: #ebf1f2;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 16px;
-  /* display: flex;
-  flex-direction: row; */
-  /* align-items:center;
-  justify-content: space-evenly; */
-  /* height: 75vh; */
-  
-}
-.market-card-container {
-background-color: #ecd9af;
-}
+
 .market-header {
   text-align:right;
   padding:2rem 5rem;
@@ -42,4 +24,25 @@ background-color: #ecd9af;
 .market-text {
   display: inline-block;
   padding-left: 2rem;
+}
+
+/* the below styling is not being used */
+.market-section {
+  background-color:#ecd9af ;
+}
+.market-container {
+  background-color: #ebf1f2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  /* border-radius: 16px; */
+  /* display: flex;
+  flex-direction: row; */
+  /* align-items:center;
+  justify-content: space-evenly; */
+  /* height: 75vh; */
+  
+}
+.market-card-container {
+background-color: #ecd9af;
 }
