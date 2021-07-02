@@ -10,7 +10,9 @@ import ProductList from "./components/ProductList"
 import SingleCard from "./components/SingleCard"
 import Form from "./components/Form";
 import Footer from "./components/Footer";
+// css
 import "./App.css";
+import "./css/card.css"
 
 function App() {
   const [cardList, setCardList] = useState([]);

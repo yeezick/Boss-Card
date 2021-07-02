@@ -1,0 +1,13 @@
+/* form */
+.form-container {
+  padding-top: 6rem;
+}
+.form-card {
+  border-radius: 16px;
+  background-color: #FFF8E7;
+  padding: 2rem;
+}
+.form-label {
+  font-weight: 600;
+  color: #693a3d;
+}

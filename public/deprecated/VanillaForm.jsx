@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
-import { baseURL, config } from "../services";
+import { baseURL, config } from "../../src/services";
 
 function Form(props) {
   const { setToggleRender, cardList } = props;

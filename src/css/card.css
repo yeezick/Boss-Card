@@ -1,0 +1,76 @@
+/* cards */
+.product-card {
+  max-width: 75vw;
+  padding: 2rem;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-areas:
+    "pic first first"
+    "connect second second"
+    "connect third third";
+
+  background-color:#ecd9af;
+  border-radius: 16px;
+  border: 2px solid #1c5162;
+  color: #333333;
+}
+.product-btn {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.first-row {
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+}
+.first-row-image {
+  grid-area: pic;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.first-row-text {
+  text-align: center;
+  grid-area: first;
+  padding: 1rem 0 0 1rem;
+}
+.second-row {
+  grid-area: second;
+}
+
+.third-row {
+  text-align: right;
+  grid-area: third;
+}
+.connect-column {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  /* text-align: center; */
+  /* padding-bottom: 2rem; */
+  grid-area: connect;
+}
+.connect-text {
+  max-width: 1rem;
+  writing-mode:vertical-rl;
+  text-orientation: upright;
+  margin-top: 3rem;
+  padding: 0;
+}
+.icon-row {
+  /* grid-area: connect; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-top: 2rem; */
+}
+.icon {
+  padding: 1rem auto;
+}
+.button-group {
+  text-align:center;
+}
