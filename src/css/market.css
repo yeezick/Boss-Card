@@ -1,8 +1,8 @@
 /* market */
 
 .market-header {
-  text-align:right;
-  padding:2rem 5rem;
+  text-align: right;
+  padding: 2rem 5rem 1rem;
   color: #ecd9af;
   font-weight: 900;
 }
@@ -19,7 +19,12 @@
 } */
 .market-tab {
   width: 100%;
-  color: #3e333f
+  color: #3e333f;
+}
+.market-tab-inner-text {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 1.25rem;
 }
 .market-text {
   display: inline-block;
@@ -28,7 +33,7 @@
 
 /* the below styling is not being used */
 .market-section {
-  background-color:#ecd9af ;
+  background-color: #ecd9af;
 }
 .market-container {
   background-color: #ebf1f2;
@@ -41,8 +46,7 @@
   /* align-items:center;
   justify-content: space-evenly; */
   /* height: 75vh; */
-  
 }
 .market-card-container {
-background-color: #ecd9af;
+  background-color: #ecd9af;
 }

@@ -23,28 +23,28 @@ function SoloCard({ soloCard }) {
       <Card className="product-card">
         <Card.Img className="first-row-image" src={profilePic} alt="client" />
         <div className="first-row-text">
-          <h2>{name}</h2>
+          <h2 className="product-card-header">{name}</h2>
           <p>{brand}</p>
         </div>
         <div className="second-row">
-          <h3>About Me</h3>
+          <h3 className="product-card-subheader" >About Me</h3>
           <p>{description}</p>
         </div>
         <div className="third-row">
-          <h3>Skills</h3>
+          <h3 className="product-card-subheader">Skills</h3>
           <p>{highlights}</p>
         </div>
         <div className="connect-column">
           <h3 className="connect-text">CONNECT</h3>
           <div className="icon-row">
             <a href={email} target="_blank" rel="noreferrer">
-              <SiMinutemailer size={40} />
+              <SiMinutemailer className="card-icon"size={40} />
             </a>
             <a href={linkedin} target="_blank" rel="noreferrer">
-              <SiLinkedin size={40} />
+              <SiLinkedin className="card-icon"size={40} />
             </a>
-            <a href={alternativeLink} target="_blank" rel="noreferrer">
-              <FaLink size={40} />
+            <a className="card-icon-container" href={alternativeLink} target="_blank" rel="noreferrer">
+              <FaLink className="card-icon" size={40} />
             </a>
           </div>
         </div>

@@ -4,15 +4,15 @@ import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 // components
 import Navbar from "./components/Navbar";
-// import Navbar from "./components/VanillaNavbar"
 import Home from "./components/Home";
-import ProductList from "./components/ProductList"
-import SingleCard from "./components/SingleCard"
+import ProductsPage from "./components/ProductsPage";
+import SingleCard from "./components/SingleCard";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
+
 // css
 import "./App.css";
-import "./css/card.css"
+import "./css/card.css";
 
 function App() {
   const [cardList, setCardList] = useState([]);
@@ -21,31 +21,31 @@ function App() {
   useEffect(() => {
     const fetchCards = async () => {
       const resp = await axios.get(baseURL, config);
-      setCardList(resp.data.records)
+      setCardList(resp.data.records);
       // remove console log before publishing
       // console.log(resp.data.records)
-    }
+    };
     fetchCards();
-  },[toggleRender])
+  }, [toggleRender]);
 
   return (
     <div className="App">
       <Navbar />
 
       <Route exact path="/">
-        <Home cardList={cardList}/>
+        <Home cardList={cardList} />
       </Route>
       <Route exact path="/products">
-        <ProductList cardList={cardList}/>
+        <ProductsPage cardList={cardList} />
       </Route>
       <Route path="/products/:id">
-        <SingleCard cardList={cardList}/> 
+        <SingleCard cardList={cardList} />
       </Route>
       <Route path="/create">
         <Form setToggleRender={setToggleRender} />
       </Route>
       <Route path="/edit/:id">
-        <Form cardList={cardList} setToggleRender={setToggleRender}/>
+        <Form cardList={cardList} setToggleRender={setToggleRender} />
       </Route>
       <Footer />
     </div>

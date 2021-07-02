@@ -3,19 +3,21 @@ import { LinkContainer } from "react-router-bootstrap";
 
 function BSNavbar() {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="md">
-      <Navbar.Brand href="/">Boss Card</Navbar.Brand>
+    <Navbar className="nav-container" fixed="top" bg="dark" variant="dark" expand="md">
+                <LinkContainer to="/">
+      <Navbar.Brand className="nav-text">iNetwork</Navbar.Brand>
+          </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="ml-auto" id="basic-navbar-nav">
         <Nav className="ml-auto">
           <LinkContainer to="/">
-            <Nav.Link>Home</Nav.Link>
+            <Nav.Link className="nav-text">Home</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/create">
-            <Nav.Link>Create</Nav.Link>
+            <Nav.Link className="nav-text">Create</Nav.Link>
           </LinkContainer>
-          <LinkContainer to="products">
-            <Nav.Link>Products</Nav.Link>
+          <LinkContainer className="nav-text" to="products">
+            <Nav.Link className="nav-text">Products</Nav.Link>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>

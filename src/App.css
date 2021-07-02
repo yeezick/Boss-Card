@@ -25,10 +25,21 @@ p {
 .App {
   background-color: #252525;
 }
+/* Navbar */
+.nav-container {
+  background-color: #252525 !important;
+}
+.nav-text{
+  color: #ecd9af !important;
+  font-weight: 700;
+}
 
 /* product list */
+.product-list-container {
+  margin-top:3rem;
+}
 .product-list-header {
-  padding: 1rem 2rem;
+  padding: 2rem 5rem;
   color: #ecd9af;
 }
 
@@ -67,5 +78,8 @@ p {
     grid-area: icons;
     flex-flow: row;
     justify-content: space-evenly;
+  }
+  .product-card {
+    padding: 0;
   }
 }

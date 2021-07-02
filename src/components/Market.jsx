@@ -22,7 +22,7 @@ function Market() {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
-              <Card.Body>
+              <Card.Body className="market-tab-inner-text">
                 Your success starts with you. The concept of networking doesn't
                 change this rule, so we encourage you be proud and confident of
                 who you are by asking you about.. you!
@@ -42,7 +42,7 @@ function Market() {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
-              <Card.Body>
+              <Card.Body className="market-tab-inner-text">
                 The information is then sent to a private database to live with
                 all the other bosses that decided to upgrade their networking
                 swagger.
@@ -64,7 +64,7 @@ function Market() {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="2">
-              <Card.Body>
+              <Card.Body className="market-tab-inner-text">
                 Then we use that information to create your card! And don't
                 worry, we're not interested in selling your information!
               </Card.Body>
