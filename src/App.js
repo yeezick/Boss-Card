@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 // components
 import Navbar from "./components/Navbar";
+// import Navbar from "./components/VanillaNavbar"
 import Home from "./components/Home";
 import ProductList from "./components/ProductList"
 import SingleCard from "./components/SingleCard"
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+
       <Route exact path="/">
         <Home cardList={cardList}/>
       </Route>

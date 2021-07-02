@@ -20,10 +20,10 @@ p{
 
 /* app styling */
 .App {
-  background-color: #693a3d;
+  background-color: #252525;
 }
 
-/* nav */
+/* nav
 .navbar {
   display: flex;
   flex-direction: row;
@@ -49,7 +49,7 @@ p{
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-}
+} */
 /*
 *HOME COMPONENT
 */
@@ -60,6 +60,7 @@ p{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 3rem;
   height: 75vh;
   display: flex;
   flex-direction: row;
@@ -83,7 +84,10 @@ p{
 }
 /* market */
 .market-section {
-  background-color: #ecd9af;
+  background-color:#ecd9af ;
+}
+.market-container {
+  background-color: #ebf1f2;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -95,15 +99,14 @@ p{
   /* height: 75vh; */
   
 }
-/* .market-card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
+.market-card-container {
+background-color: #ecd9af;
+}
 .market-header {
   text-align:right;
   padding:2rem 5rem;
-  color: white;
+  color: #ecd9af;
+  font-weight: 900;
 }
 /* .market-card {
   width: 28vw;
@@ -118,6 +121,7 @@ p{
 } */
 .market-tab {
   width: 100%;
+  color: #3e333f
 }
 .market-text {
   display: inline-block;
@@ -133,6 +137,10 @@ p{
 
 /* form */
 .form-container {
+  padding-top: 6rem
+  /* margin-top: 10rem; */
+}
+.form-card {
   border-radius: 16px;
   background-color: #FFF8E7;
   padding: 2rem;

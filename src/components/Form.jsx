@@ -72,8 +72,8 @@ function BootStrapForm(props) {
     }, 1000);
   };
   return (
-    <Container>
-     <Card className="form-container">
+    <Container className="form-container">
+     <Card className="form-card">
 
       <Jumbotron>
         <h2>{jumboHeader}</h2>
