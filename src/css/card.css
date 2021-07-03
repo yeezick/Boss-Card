@@ -119,6 +119,7 @@
   background-color: black;
   border:1px solid #ecd9af;
   color: #ecd9af;
+  padding: 0 2rem;
 }
 .card-button:hover {
   color: black;

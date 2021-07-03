@@ -6,10 +6,24 @@
   background-color: #FFF8E7;
   padding: 2rem;
 }
+.form-jumbotron {
+  background-color: #252525;
+  color: #ecd9af;
+}
 .form-label {
   font-weight: 600;
-  color: #693a3d;
+  color: #252525;
 }
-/* .form-button {
- 
-} */
+.form-button {
+  background-color: black;
+  border:1px solid black;
+  border-radius: 3px;
+  color: #ecd9af;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.form-button:hover {
+  color: black;
+  background-color: #ecd9af;
+  border: 1px solid black;
+}

@@ -37,7 +37,7 @@ function SoloCard({ soloCard }) {
         <div className="connect-column">
           <h3 className="connect-text">CONNECT</h3>
           <div className="icon-row">
-            <a href={email} target="_blank" rel="noreferrer">
+            <a href={`mailto:${email}?subject=Hello%20World`} target="_blank" rel="noreferrer">
               <SiMinutemailer className="card-icon"size={40} />
             </a>
             <a href={linkedin} target="_blank" rel="noreferrer">

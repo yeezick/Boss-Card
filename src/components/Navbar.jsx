@@ -11,13 +11,13 @@ function BSNavbar() {
       <Navbar.Collapse className="ml-auto" id="basic-navbar-nav">
         <Nav className="ml-auto">
           <LinkContainer to="/">
-            <Nav.Link className="nav-text">Home</Nav.Link>
+            <Nav.Link className="nav-text nav-link">Home</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/create">
-            <Nav.Link className="nav-text">Create</Nav.Link>
+            <Nav.Link className="nav-text nav-link">Create</Nav.Link>
           </LinkContainer>
-          <LinkContainer className="nav-text" to="products">
-            <Nav.Link className="nav-text">Products</Nav.Link>
+          <LinkContainer to="products">
+            <Nav.Link className="nav-text nav-link">Products</Nav.Link>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>

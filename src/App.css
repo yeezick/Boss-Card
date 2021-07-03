@@ -33,7 +33,18 @@ p {
 .nav-text{
   font-family: Serif;
   color: #ecd9af !important;
-  font-weight: 900;
+  font-weight: 700;
+}
+.nav-text:hover {
+ background-color: #ecd9af;
+ color: #252525 !important;
+ border-radius: 3px;
+ width: fit-content;
+ padding: 0 1rem;
+}
+.nav-link {
+margin: 0 1rem;
+padding: 0;
 }
 
 /* product list */
@@ -71,15 +82,22 @@ p {
     max-width: none;
     writing-mode: initial;
     text-orientation: initial;
-    margin: 2rem auto;
-    padding: 0;
+    margin: 0.5rem auto;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    font-size: 19.2px;
     grid-area: header;
   }
   .icon-row {
-    width: 70vw;
+    max-width: none;
+    width: 100%;
     grid-area: icons;
     flex-flow: row;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+  .icon-row > a {
+    padding: 0.3rem 1rem;
   }
   .product-card {
     padding: 0;
