@@ -1,6 +1,7 @@
 <!-- CODENAME: BANANAS -->
 
 # iNetwork
+Deployed via Netlify at: (https://inetwork.netlify.app/)
 
 ## Description
 
