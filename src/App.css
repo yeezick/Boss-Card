@@ -1,5 +1,5 @@
 /*
-* default / product list / @media
+* default / navbar / product list / @media
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
@@ -30,7 +30,7 @@ p {
 .nav-container {
   background-color: #252525 !important;
 }
-.nav-text{
+.nav-text, .nav-header{
   font-family: Serif;
   color: #ecd9af !important;
   font-weight: 700;
@@ -38,13 +38,12 @@ p {
 .nav-text:hover {
  background-color: #ecd9af;
  color: #252525 !important;
- border-radius: 3px;
- width: fit-content;
- padding: 0 1rem;
+ border-radius: 1px;
+ height: 100%;
 }
 .nav-link {
 margin: 0 1rem;
-padding: 0;
+height: 100%
 }
 
 /* product list */

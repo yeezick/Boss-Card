@@ -5,7 +5,7 @@ function BSNavbar() {
   return (
     <Navbar className="nav-container" fixed="top" bg="dark" variant="dark" expand="md">
                 <LinkContainer to="/">
-      <Navbar.Brand className="nav-text">iNetwork</Navbar.Brand>
+      <Navbar.Brand className="nav-header">iNetwork</Navbar.Brand>
           </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="ml-auto" id="basic-navbar-nav">
