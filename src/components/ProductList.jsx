@@ -1,11 +1,12 @@
+import { useParams } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import SoloCard from "./SoloCard";
-import { useParams } from "react-router-dom";
 
 function ProductList({ cardList }) {
   const params = useParams();
   console.log(params);
+
   if (params) {
     return (
       <Container>

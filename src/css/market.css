@@ -18,20 +18,33 @@
   background-color: #f2f3ea;
 } */
 .market-tab {
-  width: 100%;
-  color: #3e333f;
+  width: 95%;
+  margin-top: 2rem;
 }
-.market-tab-inner-text {
-  width: 80%;
-  margin: auto;
-  padding: 2rem 1.25rem;
-  font-family: "Montserrat", serif;
-  font-weight:500
+.market-card-container {
+  border-radius: 5px;
+  text-align: left;
+  place-items: center;
 }
 .market-text {
-  display: inline-block;
-  padding-left: 2rem;
-  font-weight:900;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+.market-title {
+  padding: 1rem;
+  font-weight: 900;
+  width: 30%;
+}
+.market-icon {
+  text-align: center;
+}
+.market-button {
+  margin: 1.5rem auto;
+  padding: 0.3rem 2rem;
+  background-color: black;
+  color: #ecd9af;
+  border: 1px solid #ecd9af;
+  border-radius: 3px;
 }
 
 /* the below styling is not being used */

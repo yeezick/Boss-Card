@@ -1,4 +1,4 @@
-import { Row, Col, Container, Spinner } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { VscGithubInverted } from "react-icons/vsc";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";

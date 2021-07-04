@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Intro from "./Intro";
 import Market from "./Market";
 import ProductList from "./ProductList";
