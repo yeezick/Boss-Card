@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
-import AOS from "aos";
 // components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -14,7 +13,6 @@ import Footer from "./components/Footer";
 // css
 import "./App.css";
 import "./css/card.css";
-import 'aos/dist/aos.css';
 
 function App() {
   const [cardList, setCardList] = useState([]);
@@ -29,8 +27,6 @@ function App() {
     };
     fetchCards();
   }, [toggleRender]);
-
-
 
   return (
     <div className="App">
@@ -51,10 +47,7 @@ function App() {
       <Route path="/edit/:id">
         <Form cardList={cardList} setToggleRender={setToggleRender} />
       </Route>
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-
-      <Footer />
-      </div>
+        <Footer />
     </div>
   );
 }
