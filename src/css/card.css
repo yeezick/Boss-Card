@@ -1,10 +1,9 @@
-/* cards */
+/* 
+* cards 
+*/
 .product-card {
-  /* max-width: 75vw; */
   padding: 2rem;
   padding-top: 1rem;
-  /* margin: 1rem auto; */
-  /* margin-top: 5rem; */
   display: grid;
   grid-template-areas:
     "pic first first"
@@ -15,29 +14,33 @@
   color: #252525;
 }
 .product-card-subheader {
-  background-color: #252525;
-  color: #ecd9af;
   width: fit-content;
   padding: 0.25rem;
+
   border-radius: 3px;
   font-size: 1.2rem;
+  background-color: #252525;
+  color: #ecd9af;
 }
 .product-card-header {
-  color: #252525;
   padding-bottom: 0.5rem;
+
+  color: #252525;
 }
 .product-btn {
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
+
+  text-align: center;
 }
 .first-row {
-  padding: 1rem 0;
-  text-align: center;
   display: flex;
+  padding: 1rem 0;
+
+  text-align: center;
 }
 .first-row-image {
   grid-area: pic;
@@ -47,9 +50,10 @@
   margin: 1rem;
 }
 .first-row-text {
-  text-align: center;
   grid-area: first;
   padding: 1rem 0 0 1rem;
+
+  text-align: center;
 }
 .second-row {
   grid-area: second;
@@ -63,11 +67,12 @@
 
 .connect-callapse {
   grid-area: connect;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   max-width: 1rem;
   height: auto;
   width: auto;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 .collapse-width {
   position: relative;
@@ -85,30 +90,29 @@
   justify-content: center;
   align-items: center;
 }
- .connect-text {
-   max-width:fit-content; 
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  padding: 0.25rem;
-  border-radius: 10px;
-  background-color: #252525;  
-  color: #ecd9af;
-  grid-area: header;
+.connect-text {
   font-size: 1.4rem;
-} 
+  grid-area: header;
+  padding: 0.25rem;
+  max-width: fit-content;
+
+  background-color: #252525;
+  border-radius: 10px;
+  color: #ecd9af;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+}
 .icon-row {
   grid-area: icons;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #ecd9af;
   max-width: 50%;
   height: 75%;
+  
+  background-color: #ecd9af;
 }
-/* .card-icon-container {
-  padding: 1rem;
-} */
 .card-icon {
   color: #252525;
 }
@@ -116,10 +120,11 @@
   padding: 1rem auto;
 }
 .card-button {
-  background-color: black;
-  border:1px solid #ecd9af;
-  color: #ecd9af;
   padding: 0 2rem;
+
+  background-color: black;
+  border: 1px solid #ecd9af;
+  color: #ecd9af;
 }
 .card-button:hover {
   color: black;

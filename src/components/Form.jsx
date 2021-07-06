@@ -2,14 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
-import {
-  Container,
-  Card,
-  Col,
-  Row,
-  Jumbotron,
-  Form,
-} from "react-bootstrap";
+import { Container, Card, Col, Row, Jumbotron, Form } from "react-bootstrap";
 import "../css/form.css";
 
 function BootStrapForm(props) {
@@ -86,7 +79,9 @@ function BootStrapForm(props) {
     <Container className="form-container">
       <Card className="form-card">
         <Jumbotron className="form-jumbotron">
-          <h2 style={{textDecoration: "underline", marginBottom:"1.3rem"}}>{jumboHeader}</h2>
+          <h2 style={{ textDecoration: "underline", marginBottom: "1.3rem" }}>
+            {jumboHeader}
+          </h2>
           <p>{jumboText}</p>
         </Jumbotron>
         <Form>

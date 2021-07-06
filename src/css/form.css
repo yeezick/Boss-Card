@@ -15,11 +15,11 @@
   color: #252525;
 }
 .form-button {
+  padding: 0.5rem 1rem;
   background-color: black;
   border:1px solid black;
   border-radius: 3px;
   color: #ecd9af;
-  padding: 0.5rem 1rem;
   font-size: 1rem;
 }
 .form-button:hover {

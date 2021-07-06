@@ -3,10 +3,16 @@ import { LinkContainer } from "react-router-bootstrap";
 
 function BSNavbar() {
   return (
-    <Navbar className="nav-container" fixed="top" bg="dark" variant="dark" expand="md">
-                <LinkContainer to="/">
-      <Navbar.Brand className="nav-header">iNetwork</Navbar.Brand>
-          </LinkContainer>
+    <Navbar
+      className="nav-container"
+      fixed="top"
+      bg="dark"
+      variant="dark"
+      expand="md"
+    >
+      <LinkContainer to="/">
+        <Navbar.Brand className="nav-header">iNetwork</Navbar.Brand>
+      </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="ml-auto" id="basic-navbar-nav">
         <Nav className="ml-auto">

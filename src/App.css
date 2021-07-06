@@ -30,25 +30,26 @@ p {
 .nav-container {
   background-color: #252525 !important;
 }
-.nav-text, .nav-header{
+.nav-text,
+.nav-header {
   font-family: Serif;
   color: #ecd9af !important;
   font-weight: 700;
 }
 .nav-text:hover {
- background-color: #ecd9af;
- color: #252525 !important;
- border-radius: 1px;
- height: 100%;
+  background-color: #ecd9af;
+  color: #252525 !important;
+  border-radius: 1px;
+  height: 100%;
 }
 .nav-link {
-margin: 0 1rem;
-height: 100%
+  margin: 0 1rem;
+  height: 100%;
 }
 
 /* product list */
 .product-list-container {
-  margin-top:3rem;
+  margin-top: 3rem;
 }
 .product-list-header {
   padding: 2rem 5rem;

@@ -13,14 +13,19 @@ function Market() {
   return (
     <Container>
       <h2 className="market-header">How We Work</h2>
-      <Container className="market-tab" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-
+      <Container
+        className="market-tab"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <Row className="market-card-container">
           <Col xs={3} className="market-title">
             <div className="market-icon">
               <BsPersonLinesFill size={50} />
             </div>
-            <p className="market-text">Tell us about yourself</p>
+            <p className="market-title-text">Tell us about yourself</p>
           </Col>
           <Col className="market-text">
             Your success starts with you. The concept of networking doesn't
@@ -29,36 +34,56 @@ function Market() {
           </Col>
         </Row>
       </Container>
-      <Container className="market-tab" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+      <Container
+        className="market-tab"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <Row className="market-card-container">
+          <Col className="market-text">
+            The information is then sent to a private database to live with all
+            the other networkers that decided to upgrade their networking
+            swagger.
+          </Col>
           <Col xs={3} className="market-title">
             <div className="market-icon">
               <GiMagickTrick size={50} />
             </div>
-            <p className="market-text">We work our magic</p>
-          </Col>
-          <Col className="market-text">
-            The information is then sent to a private database to live with all
-            the other networkers that decided to upgrade their networking swagger.
+            <p className="market-title-text">We work our magic</p>
           </Col>
         </Row>
       </Container>
-      <Container className="market-tab" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">        <Row className="market-card-container">
+      <Container
+        className="market-tab"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        {" "}
+        <Row className="market-card-container">
           <Col xs={3} className="market-title">
             <div className="market-icon">
               <GiPodiumWinner size={50} />
             </div>
-            <p className="market-text">
-              You Network
-            </p>
+            <p className="market--title-text">You Network</p>
           </Col>
           <Col className="market-text">
-            Whether you're looking for a job or a connection, you're ready to do it subtly, confidently. 
+            Whether you're looking for a job or a connection, you're ready to do
+            it subtly, confidently.
           </Col>
         </Row>
       </Container>
-      <div style={{display:"flex",}} data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <button className="market-button">Make your own</button>
+      <div
+        style={{ display: "flex" }}
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        <button className="market-button">Make your own</button>
       </div>
     </Container>
   );

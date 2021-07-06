@@ -4,7 +4,7 @@
 
 import ProductList from "./ProductList";
 
-function ProductsPage({cardList}) {
+function ProductsPage({ cardList }) {
   return (
     <section className="product-list-container">
       <ProductList cardList={cardList} />

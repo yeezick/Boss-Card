@@ -47,7 +47,7 @@ function App() {
       <Route path="/edit/:id">
         <Form cardList={cardList} setToggleRender={setToggleRender} />
       </Route>
-        <Footer />
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,6 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-function Loading () {
-
+function Loading() {
   return (
     <div className="loading">
       <h2>Loading....</h2>
@@ -9,7 +8,7 @@ function Loading () {
         <p>Head back home</p>
       </Link>
     </div>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

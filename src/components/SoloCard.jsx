@@ -1,7 +1,7 @@
 import { SiMinutemailer, SiLinkedin } from "react-icons/si";
 import { FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import {Button, Card, Container} from "react-bootstrap";
+import { Button, Card, Container } from "react-bootstrap";
 import "../css/card.css";
 
 function SoloCard({ soloCard }) {
@@ -13,7 +13,7 @@ function SoloCard({ soloCard }) {
     email,
     linkedin,
     alternativeLink,
-    profilePic
+    profilePic,
   } = soloCard.fields;
   // console.log(card)
 
@@ -27,7 +27,7 @@ function SoloCard({ soloCard }) {
           <p>{brand}</p>
         </div>
         <div className="second-row">
-          <h3 className="product-card-subheader" >About Me</h3>
+          <h3 className="product-card-subheader">About Me</h3>
           <p>{description}</p>
         </div>
         <div className="third-row">
@@ -37,13 +37,22 @@ function SoloCard({ soloCard }) {
         <div className="connect-column">
           <h3 className="connect-text">CONNECT</h3>
           <div className="icon-row">
-            <a href={`mailto:${email}?subject=Hello%20World`} target="_blank" rel="noreferrer">
-              <SiMinutemailer className="card-icon"size={40} />
+            <a
+              href={`mailto:${email}?subject=Hello%20World`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiMinutemailer className="card-icon" size={40} />
             </a>
             <a href={linkedin} target="_blank" rel="noreferrer">
-              <SiLinkedin className="card-icon"size={40} />
+              <SiLinkedin className="card-icon" size={40} />
             </a>
-            <a className="card-icon-container" href={alternativeLink} target="_blank" rel="noreferrer">
+            <a
+              className="card-icon-container"
+              href={alternativeLink}
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLink className="card-icon" size={40} />
             </a>
           </div>
@@ -51,10 +60,14 @@ function SoloCard({ soloCard }) {
       </Card>
       <div className="product-btn">
         <Link to={`/products/${soloCard.id}`}>
-          <Button className="card-button" variant="secondary">View</Button>
+          <Button className="card-button" variant="secondary">
+            View
+          </Button>
         </Link>
         <Link to={`/edit/${soloCard.id}`}>
-          <Button className="card-button" variant="secondary">Edit</Button>
+          <Button className="card-button" variant="secondary">
+            Edit
+          </Button>
         </Link>
       </div>
     </Container>

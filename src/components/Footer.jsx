@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import { useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import AOS from "aos";
 import { VscGithubInverted } from "react-icons/vsc";
@@ -15,8 +15,7 @@ function Footer() {
   return (
     <Container
       className="footer-container"
-      data-aos="fade-up"
-      data-aos-offset="200"
+      data-aos="fade"
       data-aos-easing="ease-in-sine"
       data-aos-duration="600"
     >
