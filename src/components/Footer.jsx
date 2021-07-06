@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import AOS from "aos";
 import { VscGithubInverted } from "react-icons/vsc";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
@@ -9,16 +7,8 @@ import "../css/footer.css";
 import "aos/dist/aos.css";
 
 function Footer() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
   return (
-    <Container
-      className="footer-container"
-      data-aos="fade"
-      data-aos-easing="ease-in-sine"
-      data-aos-duration="600"
-    >
+    <Container className="footer-container">
       <hr className="footer-hr" />
       <Row>
         <Col>
@@ -27,9 +17,9 @@ function Footer() {
           </Row>
           <Row>
             <p className="footer-text">
-              I'm a student at General Assembly's Software Engineering
-              program. By the time I have to edit this text, I'll be a
-              MERN-Stack developer!
+              I'm a student at General Assembly's Software Engineering program.
+              By the time I have to edit this text, I'll be a MERN-Stack
+              developer!
             </p>
           </Row>
         </Col>
@@ -78,12 +68,6 @@ function Footer() {
               </a>
               <a className="footer-link" href="https://www.google.com/sky/">
                 Google (Google Sky)
-              </a>
-              <a
-                className="footer-link"
-                href="https://react-bootstrap.netlify.app/"
-              >
-                Bootstrap
               </a>
             </Container>
           </Row>

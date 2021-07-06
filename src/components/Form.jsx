@@ -93,7 +93,8 @@ function BootStrapForm(props) {
                   Link to your profile picture:
                 </Form.Label>
                 <Form.Control
-                  type="text"
+                required
+                  type="url"
                   placeholder="URL"
                   value={profilePic}
                   onChange={(e) => setProfilePic(e.target.value)}
@@ -106,6 +107,7 @@ function BootStrapForm(props) {
               <Form.Group controlId="name">
                 <Form.Label className="form-label">My name is:</Form.Label>
                 <Form.Control
+                required
                   type="text"
                   placeholder="First and Last Names"
                   value={name}
@@ -121,6 +123,7 @@ function BootStrapForm(props) {
               What's the first impression you want to make on others?
             </Form.Label>
             <Form.Control
+            required
               type="text"
               placeholder="1-2 sentences"
               value={brand}
@@ -134,6 +137,7 @@ function BootStrapForm(props) {
               A short paragraph going in-depth about you and who you are!
             </Form.Label>
             <Form.Control
+            required
               type="text"
               placeholder="2+ sentences"
               value={description}
@@ -159,6 +163,7 @@ function BootStrapForm(props) {
           <Form.Group controlId="email">
             <Form.Label className="form-label">Email</Form.Label>
             <Form.Control
+            required
               type="email"
               placeholder="rainingcats101@catmail.com"
               value={email}
@@ -170,7 +175,8 @@ function BootStrapForm(props) {
           <Form.Group controlId="linkedin">
             <Form.Label className="form-label">LinkedIn:</Form.Label>
             <Form.Control
-              type="text"
+            required
+              type="url"
               placeholder="URL"
               value={linkedin}
               onChange={(e) => setLinkedin(e.target.value)}
@@ -184,7 +190,7 @@ function BootStrapForm(props) {
               favorite site!
             </Form.Label>
             <Form.Control
-              type="text"
+              type="url"
               placeholder="URL"
               value={alternativeLink}
               onChange={(e) => setAlternativeLink(e.target.value)}

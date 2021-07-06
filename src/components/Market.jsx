@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { GiMagickTrick, GiPodiumWinner } from "react-icons/gi";
-import { Container, Col, Row, Button } from "react-bootstrap/";
+import { Container, Col, Row } from "react-bootstrap/";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../css/market.css";
@@ -83,7 +84,9 @@ function Market() {
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
       >
-        <button className="market-button">Make your own</button>
+        <Link to="/create" style={{margin: "1.5rem auto"}}>
+          <button className="market-button">Make your own</button>
+        </Link>
       </div>
     </Container>
   );

@@ -11,29 +11,31 @@
   margin-top: 2rem;
 }
 .market-card-container {
-  border-radius: 5px;
-  text-align: left;
   place-items: center;
+
+  background-color: #ecd9af;
+  border-radius: 3px;
+  text-align: left;
 }
 .market-text {
   font-family: "Montserrat", serif;
   font-weight: 500;
 }
 .market-title {
-  text-align: center;
   padding: 1rem;
   width: 30%;
+
   background-color: black;
+  border-radius: 2px;
   color: #ecd9af;
+  text-align: center;
 }
 .market-icon {
   text-align: center;
 }
 .market-button {
-  margin: 1.5rem auto;
-  padding: 0.3rem 2rem;
   background-color: black;
-  color: #ecd9af;
   border: 1px solid #ecd9af;
   border-radius: 3px;
+  color: #ecd9af;
 }
