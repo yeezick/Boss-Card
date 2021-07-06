@@ -27,7 +27,7 @@ function Footer() {
           </Row>
           <Row>
             <p className="footer-text">
-              I'm a student at Generesal Assembly's Software Engineering
+              I'm a student at General Assembly's Software Engineering
               program. By the time I have to edit this text, I'll be a
               MERN-Stack developer!
             </p>
@@ -35,7 +35,7 @@ function Footer() {
         </Col>
         <Col>
           <Row>
-            <h6 className="footer-header">Reach out to me:</h6>
+            <h6 className="footer-header">Let's Connect!</h6>
           </Row>
           <Row className="footer-icon-row">
             <a className="footer-icon" href="https://github.com/yeezick">
@@ -60,7 +60,7 @@ function Footer() {
         </Col>
         <Col>
           <Row>
-            <h6 className="footer-header">Thanks to</h6>
+            <h6 className="footer-header">Special Thanks:</h6>
           </Row>
           <Row>
             <Container>
