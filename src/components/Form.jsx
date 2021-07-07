@@ -93,7 +93,7 @@ function BootStrapForm(props) {
                   Link to your profile picture:
                 </Form.Label>
                 <Form.Control
-                required
+                required="true"
                   type="url"
                   placeholder="URL"
                   value={profilePic}
@@ -107,7 +107,7 @@ function BootStrapForm(props) {
               <Form.Group controlId="name">
                 <Form.Label className="form-label">My name is:</Form.Label>
                 <Form.Control
-                required
+                required="true"
                   type="text"
                   placeholder="First and Last Names"
                   value={name}
@@ -123,7 +123,7 @@ function BootStrapForm(props) {
               What's the first impression you want to make on others?
             </Form.Label>
             <Form.Control
-            required
+            required="true"
               type="text"
               placeholder="1-2 sentences"
               value={brand}
@@ -137,7 +137,7 @@ function BootStrapForm(props) {
               A short paragraph going in-depth about you and who you are!
             </Form.Label>
             <Form.Control
-            required
+            required="true"
               type="text"
               placeholder="2+ sentences"
               value={description}
@@ -163,7 +163,7 @@ function BootStrapForm(props) {
           <Form.Group controlId="email">
             <Form.Label className="form-label">Email</Form.Label>
             <Form.Control
-            required
+            required="true"
               type="email"
               placeholder="rainingcats101@catmail.com"
               value={email}
@@ -175,7 +175,7 @@ function BootStrapForm(props) {
           <Form.Group controlId="linkedin">
             <Form.Label className="form-label">LinkedIn:</Form.Label>
             <Form.Control
-            required
+            required="true"
               type="url"
               placeholder="URL"
               value={linkedin}
