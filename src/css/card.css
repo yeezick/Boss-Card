@@ -7,8 +7,9 @@
   display: grid;
   grid-template-areas:
     "pic first first"
-    "second second connect"
-    "third third connect";
+    "second second second"
+    "third third third"
+    "connect connect connect";
 
   background-color: #ecd9af;
   color: #252525;
@@ -86,7 +87,9 @@
 .connect-column {
   display: grid;
   grid-area: connect;
-  grid-template-areas: "icons header";
+  grid-template-areas: 
+  "header"
+  "icons";
   justify-content: center;
   align-items: center;
 }
@@ -94,24 +97,21 @@
   font-size: 1.4rem;
   grid-area: header;
   padding: 0.25rem;
+  margin: 0 auto 1rem auto;;
   max-width: fit-content;
 
   background-color: #252525;
   border-radius: 10px;
   color: #ecd9af;
-  text-orientation: upright;
-  writing-mode: vertical-rl;
 }
 .icon-row {
-  grid-area: icons;
   display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: 50%;
-  height: 75%;
-  
-  background-color: #ecd9af;
+  max-width: none;
+  width: 50vw;
+  grid-area: icons;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 .card-icon {
   color: #252525;
